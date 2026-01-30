@@ -135,7 +135,7 @@ const menu = {
     { "name": "Jägermeister Bomb (Double 50ml)", "price": 7.5 },
     { "name": "Baileys (Single 25ml)", "price": 5.5 },
     { "name": "Baileys (Double 50ml)", "price": 7.5 },
-    { "name": "Tequila (Single 25ml)", "price": 4.5 },
+    { "name": "Tequila (Single 25ml)", "price": 3.5 },
     { "name": "Aguardiente (Single 25ml)", "price": 3.5 }
   ],
 
@@ -177,8 +177,8 @@ const menu = {
   ],
 
   "Ribs": [
-    { "name": "Half Rack Ribs (850g)", "price": 16.99 },
-    { "name": "The Real Texan (Full Rack)", "price": 23.99 }
+    
+    { "name": "The Real Texan Ribs", "price": 16.99 }
   ],
 
   "Mexican Food - Quesadillas": [
@@ -345,5 +345,6 @@ const menu = {
 
   
 };
+
 
 
