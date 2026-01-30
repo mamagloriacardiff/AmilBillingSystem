@@ -9,7 +9,7 @@
 
 const menu = {
 	
- {
+ 
   "Soft Drinks": [
     { "name": "Sprite", "price": 2.75 },
     { "name": "7UP", "price": 2.75 },
@@ -342,7 +342,8 @@ const menu = {
     { "name": "Bunuelos", "price": 7.5 },
     { "name": "Salpicon (fruit cocktail with ice cream)", "price": 7.5 }
   ]
-}
+
   
 };
+
 
