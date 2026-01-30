@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wings of Glory Billing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    
+    <!-- Left panel: Tabs -->
+<div id="tabs-panel">
+	<img src="logo.png" alt="Restaurant Logo" id="restaurant-logo">
+  <h1>Wings Of Glory</h1>
+  <h2>Tabs</h2>
+  <button id="new-tab-btn">+ New Tab</button>
+<div id="tabs-list-container"  class="scrollable-panel">
+  <ul id="tabs-list"></ul>
+  </div>
+
+  <!-- Bottom buttons: Export & Purge -->
+  <div id="left-bottom-buttons">
+    <button id="export-btn">Export Data</button>
+    <button id="purge-btn">Purge Archived</button>
+  </div>
+</div>
+
+
+    <!-- Middle panel: Active Tab / Bill -->
+    <div id="bill-panel">
+      <h2>Active Tab: <span id="active-tab-name">None</span></h2>
+<div id="bill-items-container"  class="scrollable-panel">
+      <ul id="bill-items"></ul>
+    </div>
+
+      <div id="total">Total: £0.00</div>
+      <button id="close-tab-btn">Close Tab</button>
+    </div>
+
+    <!-- Right panel: Menu -->
+    <div id="menu-panel">
+      <h2>Menu</h2>
+<input 
+  type="text" 
+  id="menu-search" 
+  placeholder="Search menu..." 
+  style="width: 90%; margin: 5px 0; padding: 5px;"
+>
+
+<div id="menu-items-container"  class="scrollable-panel">
+
+<!-- Drinks section -->
+  <h3>Drinks</h3>
+      <button class="menu-item" data-name="Beer" data-price="5">THERE IS SOME ERROR - THIS IS THE HARD CODED MENU BEING SHOWN (£5)</button>
+      <button class="menu-item" data-name="THERE IS SOME ERROR - THIS IS THE HARD CODED MENU BEING SHOWN" data-price="5">THERE IS SOME ERROR - THIS IS THE HARD CODED MENU BEING SHOWN (£4)</button>
+
+<!-- Starters section -->
+  <h3>Starters</h3>
+      <button class="menu-item" data-name="Burger" data-price="12">Burger (£12)</button>
+      <button class="menu-item" data-name="Fries" data-price="4">Fries (£4)</button>
+
+
+<!-- Mains section -->
+  <h3>Mains</h3>
+	<button class="menu-item" data-name="Food" data-price="12">Arepas (£12)</button>
+  </div>
+      <button id="custom-item-btn">+ Custom Item</button>
+
+       
+
+  </div>
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

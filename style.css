@@ -1,0 +1,179 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  height: 100vh; /* Full screen height */
+}
+
+/* Left panel: Tabs */
+#tabs-panel {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  position: relative;
+  padding: 10px 10px 70px 10px; /* bottom space for buttons */
+  box-sizing: border-box;
+}
+
+#tabs-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* Middle panel: Active tab / bill */
+#bill-panel {
+  flex: 2;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#bill-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#total {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Right panel: Menu */
+#menu-panel {
+  flex: 1;
+  padding: 10px 10px 60px 10px; /* space for bottom buttons if needed */
+  box-sizing: border-box;
+}
+
+.menu-item, 
+#custom-item-btn, 
+#new-tab-btn, 
+#close-tab-btn {
+  display: block;
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Bill items */
+#bill-items li {
+  margin: 5px 0;
+  padding: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove button */
+#bill-items button {
+  margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#bill-items button:hover {
+  background-color: #d32f2f;
+}
+
+/* Left panel bottom buttons */
+#left-bottom-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#left-bottom-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#tabs-list-container {
+  max-height: calc(100% - 120px); /* adjust based on panel padding + buttons height */
+  overflow-y: auto;
+}
+
+#tabs-list-container::-webkit-scrollbar {
+  width: 6px; /* thin scrollbar */
+}
+
+#tabs-list-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+
+#menu-items-container {
+  max-height: calc(100% - 60px); /* leaves room for bottom buttons if needed */
+  overflow-y: auto;
+  padding-right: 5px; /* optional, for scrollbar spacing */
+}
+
+#menu-items-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+#menu-items-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+#bill-items-container {
+  max-height: calc(100% - 120px); /* leaves room for Total & Close Tab */
+  overflow-y: auto;
+  padding-right: 5px; /* optional, for scrollbar spacing */
+}
+
+#bill-items-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+#bill-items-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+#restaurant-logo {
+  display: block;
+  width: 120px;   /* adjust size */
+  margin: 10px auto; /* centers in panel */
+}
+#tabs-panel h1,
+#menu-panel h2 {
+  text-align: center;
+}
+
+
+/* Scrollbar styling for all scrollable containers */
+.scrollable-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-panel::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.scrollable-panel::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.tab-item.active {
+  background-color: #d0e7ff; /* light blue */
+  border-left: 4px solid #007BFF; /* subtle highlight bar */
+  padding-left: 6px; /* adjust so text doesn't shift */
+}

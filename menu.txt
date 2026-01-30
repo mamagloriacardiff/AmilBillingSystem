@@ -1,0 +1,45 @@
+/*
+  Wings Billing App - Menu File
+  Created by: Amol Dixit
+  Date: 31st Aug 2025
+  
+  File Desc: Primary Menu File
+*/
+
+
+const menu = {
+	
+  "Soft Drinks": [
+    { "name": "Soda Pop", "price": 2 },
+    { "name": "Energy Drinks", "price": 3.5 },
+    { "name": "SAMPL Capri Sun", "price": 2 },
+    { "name": "Coconut Water", "price": 3.5 },
+	
+  ],
+    "100 % Natural Juices": [
+    { "name": "Pint", "price": 3.5 },
+    { "name": "Jar", "price": 9 }
+  ],
+  "Starters": [
+    { "name": "Columbian Arepas", "price": 8.99 },
+    { "name": "Chips", "price": 3.5 },
+	{ "name": "Beans", "price": 3.5 }
+  ],
+  "Mains": [
+    { "name": "Columbian Picada", "price": 16.99 },
+	{ "name": "Mixed Rices", "price": 15.99 },
+	{ "name": "Frijolada", "price": 14.99 },
+        { "name": "Mexican Birria", "price": 15.99 }
+  ],
+  "Kids Menu": [
+    { "name": "Columbian Picada", "price": 6.99 },
+	{ "name": "Mixed Rices", "price": 5.99 },
+	{ "name": "Frijolada", "price": 4.99 }
+  ],
+  "Desserts": [
+    { "name": "Churros con Chocolate", "price": 6.99 },
+	{ "name": "Sweet Plantain", "price": 6.99 },
+	{ "name": "Sopapilla", "price": 6.99 }
+  ]
+  
+};
